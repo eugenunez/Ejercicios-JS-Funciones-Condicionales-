@@ -1,6 +1,7 @@
+/*
 FUNCIONES
 
-1)Crear una función obtenerNombreCompleto que tome como argumento un nombre y un apellido 
+1) Crear una función obtenerNombreCompleto que tome como argumento un nombre y un apellido 
 y devuelva un string con la unión de ambos valores
 
 const obtenerNombreCompleto=(nombre,apellido)=>{
@@ -8,14 +9,14 @@ return nombre + apellido
 }
 console.log(obtenerNombreCompleto("Maria ", "Nuñez"))
 
-2)Crear una función saludar que tome como argumentos un nombre y devuelva un saludo que lo incluya.
+2) Crear una función saludar que tome como argumentos un nombre y devuelva un saludo que lo incluya.
 
 const saludar=(nombre)=>{
 return "Hola "+ nombre + ", un gusto conocerte"
 }
 console.log(saludar(obtenerNombreCompleto("Maria ", "Nuñez")))
 
-3)Crear una función gritar que tome como argumento un string y devuelva el mismo string con un signo 
+3) Crear una función gritar que tome como argumento un string y devuelva el mismo string con un signo 
 de exclamación al principio y al final del mismo
 
 function gritar(str){
@@ -23,7 +24,7 @@ function gritar(str){
 }
 console.log(gritar("Hola Eugenia"))
 
-4)Usando las funciones anteriores (obtenerNombreCompleto, saludar y gritar), crear una función 
+4) Usando las funciones anteriores (obtenerNombreCompleto, saludar y gritar), crear una función 
 saludarGritando que tome como argumentos un nombre y un apellido y devuelva un saludo con signos 
 de exclamación.
 
@@ -32,7 +33,7 @@ const saludo = saludar(nombre);
 const grito = gritar(saludo);
 console.log(grito)
 
-5)Crear una función obtenerDatosDeCiudad que tome como argumentos un string nombre, un número 
+5) Crear una función obtenerDatosDeCiudad que tome como argumentos un string nombre, un número 
 poblacion y un string pais y devuelva string con el siguiente formato: La ciudad de NOMBRE tiene una 
 población de POBLACION habitantes y está ubicada en PAIS 
 
@@ -42,7 +43,7 @@ return "La ciudad de "+ nombre +" tiene una poblacion de "+poblacion+ " habitant
 }
 console.log(obtenerDatosDeCiudad("Resistencia", "800.000", "Argentina"))
 
-6)Crear una función convertirHorasEnSegundos que tome como argumento un número de horas y devuelva 
+6) Crear una función convertirHorasEnSegundos que tome como argumento un número de horas y devuelva 
 la conversión a segundos de dicha cantidad de horas
 
 const convertirHoraseEnSegundos=(horas)=>{
@@ -51,7 +52,7 @@ const convertirHoraseEnSegundos=(horas)=>{
 
 console.log(convertirHorasEnSegundos(3))
 
-7)Crear una función calcularPuntaje que calcule el puntaje de un examen que consiste en ejercicios de 
+7) Crear una función calcularPuntaje que calcule el puntaje de un examen que consiste en ejercicios de 
 distinto nivel. Debe tomar como argumento tres numeros que consisten en la cantidad de ejercicios 
 resueltos en cada nivel y devolver un número con el puntaje correspondiente. 
 El puntaje se calcula de la siguiente forma:
@@ -65,7 +66,7 @@ const calcularPuntaje=(facil,normal,dificil)=>{
 
 console.log(calcularPuntaje(3,0,0))
 
-8)Crear una función generarEmail que tome como argumentos dos string usuario y dominio y el un string 
+8) Crear una función generarEmail que tome como argumentos dos string usuario y dominio y el un string 
 email con el formato usuario@dominio.com
 
 const generarEmail=(usuario,dominio)=>{
@@ -73,7 +74,7 @@ const generarEmail=(usuario,dominio)=>{
 }
 console.log(generarEmail("eugeiq","gmail"))
 
-9)Crear una función obtenerCompetencia que tome como argumentos dos strings a y b y devuelva un string 
+9) Crear una función obtenerCompetencia que tome como argumentos dos strings a y b y devuelva un string 
 con el formato a vs. b
 
 const obtenerCompetencia=(a,b)=>{
@@ -82,7 +83,7 @@ const obtenerCompetencia=(a,b)=>{
 let respuestaCompetencia=obtenerCompetencia("Malon","Roberto")
 console.log(respuestaCompetencia)
 
-10)FPS son cuadros por segundo (frames per second). Crear una una función calcularFPS que tome como 
+10) FPS son cuadros por segundo (frames per second). Crear una una función calcularFPS que tome como 
 argumentos una cantidad de cuadros por segundo y una cantidad de minutos, y devuelva cuántos cuadros 
 hubo en esa cantidad de minutos
 
@@ -91,7 +92,7 @@ const calcularFPS=(fps,min)=>{
 }
 console.log(calcularFPS(10,2))
 
-11)Crear una función calcularPorcentaje que tome como argumentos un número y un porcentaje y devuelva 
+11) Crear una función calcularPorcentaje que tome como argumentos un número y un porcentaje y devuelva 
 el valor del porcentaje correspondiente al número
 
 const calcularPorcentaje=(numero,porcentaje)=>{
@@ -101,7 +102,7 @@ console.log(calcularPorcentaje(100,15))
 console.log(calcularPorcentaje(10,50))
 console.log(calcularPorcentaje(200,10))
 
-12)Crear una función calcularAreaTriangulo que tome como argumentos el ancho y el alto de un rectángulo 
+12) Crear una función calcularAreaTriangulo que tome como argumentos el ancho y el alto de un rectángulo 
 y devuelva su perímetro
 
 const calcularPerimetroRectangulo=(ancho,alto)=>{
@@ -110,21 +111,21 @@ const calcularPerimetroRectangulo=(ancho,alto)=>{
 console.log(calcularPerimetroRectangulo(3.2,5))
 console.log(calcularPerimetroRectangulo(10,20))
 
-13)Crear una función dividir que tome como argumentos dos números y devuelva la división de ellos
+13) Crear una función dividir que tome como argumentos dos números y devuelva la división de ellos
 
 const dividir=(a,b)=>{
     return a/b
 }
 console.log(dividir(100,2))
 
-14)Crear una función restar que tome como argumentos dos números y devuelva la resta de ellos
+14) Crear una función restar que tome como argumentos dos números y devuelva la resta de ellos
 
 const restar=(a,b)=>{
     return a-b
 }
 console.log(restar(10,-6))
 
-15)Crear una función calcularAreaTriangulo que tome como argumentos la base y la altura de un triángulo 
+15) Crear una función calcularAreaTriangulo que tome como argumentos la base y la altura de un triángulo 
 y devuelva el área del mismo
 
 const calcularAreaTriangulo=(b,h)=>{
@@ -405,3 +406,4 @@ const obtenerSensacion=(temperatura)=>{
 
 }
 console.log(obtenerSensacion(49))
+*/
